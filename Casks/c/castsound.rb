@@ -3,7 +3,7 @@
 
 cask "castsound" do
   version "0.1.0"
-  sha256 "ca5e0dd4e2eb21b389a5806d8c32fcf93b95b248fe036ad124c356097fe14629"
+  sha256 "fabc587b8b68f8f8cb21fb2985488deacc64573eed8e54ac6675caaf3c5dc7e5"
 
   url "https://github.com/CastSound/CastSound-Desktop/releases/download/v#{version}/CastSound-#{version}-macos-universal.dmg"
   name "CastSound"
