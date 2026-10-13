@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "castsound" do
-  version "1.0.24"
-  sha256 "51ab45f2c63064b1470608141b162678da47cd3c68cc4a79cf8b8cc913f41b91"
+  version "1.0.25"
+  sha256 "622815bf04a2b9fc1f73b40ee380dc6bd049ec2aa9321deb1ade5f6245b13da6"
 
   url "https://github.com/CastSound/CastSound-Desktop/releases/download/v#{version}/CastSound-#{version}-macos-universal.dmg"
   name "CastSound"
