@@ -15,6 +15,9 @@ Or in one command:
 brew install --cask castsound/tap/castsound
 ```
 
-## Updates
-
 The cask uses `livecheck` against the latest GitHub release, so `brew upgrade` will pick up new versions automatically.
+
+## Website & Guides
+
+- Official Website: https://castsound.app
+- Setup Guides: https://castsound.app/guides
