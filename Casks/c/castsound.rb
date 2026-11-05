@@ -7,7 +7,7 @@ cask "castsound" do
 
   url "https://github.com/CastSound/CastSound-Desktop/releases/download/v#{version}/CastSound-#{version}-macos-universal.dmg"
   name "CastSound"
-  desc "Use your phone as a wireless speaker, microphone and webcam for your computer"
+  desc "Turn your smartphone into complete PC peripherals with ultra-low latency"
   homepage "https://castsound.app/"
 
   livecheck do
