@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "castsound" do
-  version "1.0.33"
-  sha256 "d61787bc7c164e5c15a2a54427c67b55a43b46946bfcbee495a07e8f6bfe11b9"
+  version "1.0.34"
+  sha256 "51d29a7fd212f440d1c98d96e718b9c9410f32c70b9b85f1145aa1b97477fc24"
 
   url "https://github.com/CastSound/CastSound-Desktop/releases/download/v#{version}/CastSound-#{version}-macos-universal.dmg"
   name "CastSound"
@@ -30,6 +30,9 @@ cask "castsound" do
     args:       ["-y"],
     sudo:       true,
   }
+  uninstall delete: [
+    "#{appdir}/CastSound.app",
+  ]
 
   zap trash: [
     "~/Library/Application Support/CastSound",
