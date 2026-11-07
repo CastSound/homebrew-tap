@@ -3,7 +3,7 @@
 
 cask "castsound" do
   version "1.0.34"
-  sha256 "51d29a7fd212f440d1c98d96e718b9c9410f32c70b9b85f1145aa1b97477fc24"
+  sha256 "43761d56030b34fb5b9671813be510b2a0bc1798d75e6f645615536ea33c6915"
 
   url "https://github.com/CastSound/CastSound-Desktop/releases/download/v#{version}/CastSound-#{version}-macos-universal.dmg"
   name "CastSound"
@@ -26,9 +26,10 @@ cask "castsound" do
   end
 
   uninstall script: {
-    executable: "#{appdir}/CastSound.app/Contents/MacOS/castsound-uninstall",
-    args:       ["-y"],
-    sudo:       true,
+    executable:   "#{appdir}/CastSound.app/Contents/MacOS/castsound-uninstall",
+    args:         ["-y"],
+    sudo:         true,
+    must_succeed: false,
   }
   uninstall delete: [
     "#{appdir}/CastSound.app",
